@@ -8,7 +8,7 @@
     display: grid;
     overflow: auto;
     text-align: center;
-    grid-template-columns: 1fr 7fr;
+    grid-template-columns: 1.5fr 7fr;
     grid-template-rows: 1fr 4fr;
 }
 
@@ -21,6 +21,10 @@
     font-size: 1.5rem;
     grid-template-rows: repeat(12, 1fr);
     gap: 5px;
+}
+
+svg {
+    height: 1.5rem;
 }
 
 .dashboard {
@@ -123,13 +127,8 @@ button {
     grid-column: 1 / 2;
     background-color: lightgreen;
     padding: 1rem;
-}
-
-.main-left>h2 {
     text-align: start;
 }
-
-/* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
 
 .main-left-grid {
     display: grid;
@@ -146,4 +145,18 @@ button {
 .main-right {
     grid-column: 2 / 3;
     background-color: lightseagreen;
+}
+
+.announcements { 
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.announcements > div {
+    border: 1px solid black;
+}
+
+.trending {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
