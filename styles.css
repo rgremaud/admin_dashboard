@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -13,7 +14,7 @@
 }
 
 .sidebar {
-    background-color: lightblue;
+    background-color: #494D5F;
     grid-area: 1 / 1 / 3 / 2;
     display: grid;
     color: white;
@@ -21,6 +22,19 @@
     font-size: 1.5rem;
     grid-template-rows: repeat(12, 1fr);
     gap: 5px;
+}
+
+.grid-link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-link>.text {
+    text-align: start;
+}
+
+.grid-link>svg {
+    margin-left: 6rem;
 }
 
 svg {
@@ -36,12 +50,12 @@ svg {
 
 .square {
     display: grid;
-    height: 2rem;
-    width: 2rem;
+    height: 40px;
+    width: 40px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(1fr, 5);
     gap: 4px;
-    padding-left: 30px;
+    margin-left: 30px;
 }
 
 .square>div {
@@ -65,7 +79,7 @@ svg {
 }
 
 .header {
-    background-color: white;
+    background-color: #E5EAF5;
     font-size: 1.5rem;
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
@@ -80,9 +94,11 @@ svg {
 }
 
 .search-input {
+    outline: none;
     height: 1.75rem;
     width: 60%;
-    background-color: gray;
+    border: 1px solid #494D5F;
+    background-color: #bdbdbd;
     border-radius: .875rem;
 }
 
@@ -113,11 +129,12 @@ svg {
 
 button {
     margin: 1rem;
+    background-color: #D0BDF4;
 }
 
 
 .main-content {
-    background-color: gray;
+    background-color: #bdbdbd;
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -125,38 +142,43 @@ button {
 
 .main-left {
     grid-column: 1 / 2;
-    background-color: lightgreen;
     padding: 1rem;
     text-align: start;
 }
 
 .main-left-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
     gap: 1rem;
 }
 
 .content-squares {
-    height: 200px;
+    height: 250px;
     border: 1px solid black;
+    background-color: #E5EAF5;
 }
 
 
 .main-right {
     grid-column: 2 / 3;
-    background-color: lightseagreen;
 }
 
-.announcements { 
+.announcements {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-.announcements > div {
-    border: 1px solid black;
+.announcements>div {
+    border: 1px solid #8458B3;
+    background-color: #E5EAF5;
 }
 
 .trending {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.trending>div {
+    border: 1px solid black;
+    background-color: #E5EAF5;
 }
