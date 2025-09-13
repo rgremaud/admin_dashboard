@@ -96,17 +96,23 @@ svg {
 
 .header-top {
     display: grid;
-    grid-template-columns: .5fr 4fr .5fr .5fr 1fr;
+    grid-template-columns: .2fr 4fr .5fr .3fr 1fr;
     margin-top: 1rem;
 }
 
 .search-input {
     outline: none;
     height: 1.75rem;
-    width: 75%;
+    width: 100%;
     border: 1px solid #494D5F;
     background-color: #bdbdbd;
     border-radius: .875rem;
+}
+
+.name {
+    font-size: 1vw;
+    margin-top: .5vw;
+    margin-right: 3vw;
 }
 
 .header-bottom {
@@ -174,28 +180,61 @@ button:hover {
 .main-content {
     background-color: #bdbdbd;
     grid-area: 2 / 2 / 3 / 3;
+}
+
+.main-header {
+    font-weight: 500;
+    text-align: start;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: 1vh 0 0 .4vw;
+}
+
+.main-bottom {
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
 
 .main-left {
     grid-column: 1 / 2;
-    padding: 1rem;
+    padding: 1vw;
     text-align: start;
 }
 
 .main-left-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
     gap: 1rem;
 }
 
 .content-squares {
     height: 250px;
-    border: 1px solid black;
     background-color: #E5EAF5;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 2% 98%;
 }
 
+.content {
+    font-size: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+.bottom-content {
+    text-align: end;
+}
+
+.left-border {
+    background-color: #8458B3;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
 
 .main-right {
     grid-column: 2 / 3;
