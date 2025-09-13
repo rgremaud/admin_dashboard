@@ -22,7 +22,7 @@
     display: grid;
     color: white;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     grid-template-rows: repeat(12, 1fr);
     gap: 5px;
 }
@@ -30,21 +30,23 @@
 .grid-link {
     display: grid;
     text-decoration: none;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: minmax(0px, .5fr) 1fr;
 }
 
 .grid-link>.text {
+    margin-right: 1vw;
+    font-weight: 500;
     text-align: start;
     color: white;
 }
 
 .grid-link>svg {
-    margin-left: 7rem;
+    margin-left: 60%;
     margin-top: .4rem;
 }
 
 svg {
-    height: 1.5rem;
+    height: 1.5vw;
 }
 
 .dashboard {
@@ -86,7 +88,7 @@ svg {
 
 .header {
     background-color: #E5EAF5;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template-rows: 1fr 1.5fr;
@@ -97,10 +99,6 @@ svg {
     grid-template-columns: .5fr 4fr .5fr .5fr 1fr;
     margin-top: 1rem;
 }
-
-/* .header-top>.avatar {
-    height: 40%;
-} */
 
 .search-input {
     outline: none;
@@ -124,6 +122,21 @@ svg {
 
 .avatar-big {
     grid-column: 1 / 2;
+    margin-left: 1vw;
+}
+
+.top-greeting,
+.bottom-greeting {
+    text-align: start;
+}
+
+.top-greeting {
+    font-size: .9vw
+}
+
+.bottom-greeting {
+    font-size: 2vw;
+    font-weight: 600;
 }
 
 .greeting {
