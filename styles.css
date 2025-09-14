@@ -23,8 +23,7 @@
     color: white;
     font-weight: bold;
     font-size: calc(0.75rem + .75vw);
-    grid-template-rows: repeat(12, 1fr);
-    gap: 5px;
+    grid-template-rows: repeat(12, minmax(0, 8vh));
 }
 
 .grid-link {
