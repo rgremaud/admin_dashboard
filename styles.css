@@ -13,7 +13,7 @@
     overflow: auto;
     text-align: center;
     grid-template-columns: 1.5fr 7fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 20vh 4fr;
 }
 
 .sidebar {
@@ -90,7 +90,7 @@ svg {
     font-size: calc(0.75rem + .75vw);
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
-    grid-template-rows: 1fr 1.5fr;
+    grid-template-rows: 10vh 15vh;
 }
 
 .header-top {
@@ -103,6 +103,7 @@ svg {
     outline: none;
     height: 1.75rem;
     width: 100%;
+    padding-left: 1rem;
     border: 1px solid #494D5F;
     background-color: #bdbdbd;
     border-radius: .875rem;
