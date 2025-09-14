@@ -22,7 +22,7 @@
     display: grid;
     color: white;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: calc(0.75rem + .75vw);
     grid-template-rows: repeat(12, 1fr);
     gap: 5px;
 }
@@ -88,7 +88,7 @@ svg {
 
 .header {
     background-color: #E5EAF5;
-    font-size: 1.5vw;
+    font-size: calc(0.75rem + .75vw);
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template-rows: 1fr 1.5fr;
@@ -110,7 +110,7 @@ svg {
 }
 
 .name {
-    font-size: 1vw;
+    font-size: calc(0.4rem + .75vw);
     margin-top: .5vw;
     margin-right: 3vw;
 }
@@ -137,11 +137,11 @@ svg {
 }
 
 .top-greeting {
-    font-size: .9vw
+    font-size: calc(0.4rem + .75vw)
 }
 
 .bottom-greeting {
-    font-size: 2vw;
+    font-size: calc(0.75rem + 1.1vw);
     font-weight: 600;
 }
 
@@ -156,8 +156,8 @@ svg {
 }
 
 button {
-    font-weight: bold;
-    font-size: 1rem;
+    font-weight: 500;
+    font-size: calc(0.75rem + .5vw);
 
     height: 3rem;
     margin: 1.5rem;
@@ -192,7 +192,7 @@ button:hover {
 
 .main-bottom {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 4fr 1.2fr;
 }
 
 .main-left {
@@ -208,7 +208,7 @@ button:hover {
 }
 
 .content-squares {
-    height: 250px;
+    height: 33vh;
     background-color: #E5EAF5;
     border-radius: 15px;
     display: grid;
@@ -216,18 +216,20 @@ button:hover {
 }
 
 .content {
-    font-size: 1rem;
+    font-size: calc(0.7rem + .3vw);
     padding: 1rem;
     overflow: hidden;
     white-space: wrap;
     text-overflow: ellipsis;
 
     display: grid;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: minmax(0, 2fr) 10%;
 }
 
 .bottom-content {
-    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
 }
 
 .left-border {
@@ -238,16 +240,26 @@ button:hover {
 
 .main-right {
     grid-column: 2 / 3;
+    margin-top: 2vh;
 }
 
 .announcements {
+    border-radius: 15px;
+    margin-right: 1vw;
+    background-color: #E5EAF5;
+    height: 50%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr)
 }
 
 .announcements>div {
-    border: 1px solid #8458B3;
-    background-color: #E5EAF5;
+    font-size: calc(0.7rem + .3vw);;
+    padding: 1rem;
+    text-align: start;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .trending {
