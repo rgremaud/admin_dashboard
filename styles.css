@@ -46,7 +46,7 @@
 }
 
 svg {
-    height: 1.5vw;
+    height: calc(1rem + .5vw);
 }
 
 .dashboard {
