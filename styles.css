@@ -218,7 +218,7 @@ button:hover {
 .content {
     font-size: calc(0.7rem + .3vw);
     padding: 1rem;
-    overflow: hidden;
+    overflow: auto;
     white-space: wrap;
     text-overflow: ellipsis;
 
