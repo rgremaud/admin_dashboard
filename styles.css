@@ -164,6 +164,7 @@ button {
 
     color: #FFFFFF;
     background-color: #494D5F;
+    box-shadow: 0 4px 2px -2px #494D5F;
 
     border: none;
     border-radius: 30px;
@@ -213,6 +214,7 @@ button:hover {
     border-radius: 15px;
     display: grid;
     grid-template-columns: 2% 98%;
+    box-shadow: 0 4px 2px -2px #494D5F;
 }
 
 .content {
@@ -250,7 +252,8 @@ button:hover {
     height: 40%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: minmax(0, 1fr)
+    grid-template-columns: minmax(0, 1fr);
+    box-shadow: 0 4px 2px -2px #494D5F;
 }
 
 .announcements>div {
@@ -275,6 +278,7 @@ button:hover {
     text-align: start;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    box-shadow: 0 4px 2px -2px #494D5F;
 }
 
 .trending>.users {
