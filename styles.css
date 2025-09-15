@@ -260,7 +260,7 @@ button:hover {
     font-size: calc(0.7rem + .3vw);
     padding: 1rem;
     text-align: start;
-    white-space: wrap;
+    word-break: break-word;
     overflow: hidden;
     text-overflow: ellipsis;
 }
